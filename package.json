@@ -10,14 +10,15 @@
     "lint": "umi lint",
     "lint:fix": "umi lint --fix",
     "eslint:fix": "umi lint --eslint-only",
-    "stylelint:fix": "umi lint --stylelint-only"
+    "stylelint:fix": "umi lint --stylelint-only",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,less}": [
-        "umi lint",
-        "prettier --write --ignore-unknown"
+      "umi lint",
+      "prettier --write --ignore-unknown"
     ]
-},
+  },
   "dependencies": {
     "umi": "^4.0.24"
   },
@@ -26,7 +27,7 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.24",
     "eslint": "^8.24.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2",
     "prettier-plugin-organize-imports": "^2",
